@@ -1,0 +1,9 @@
+insert into roles (role_name) values ('Админ'), ('Модератор'),('Пользователь'),('Неавторизированный пользователь');
+insert into auto_brand (brand_name) values ('Форд'), ('Мазерати');
+insert into auto (VIN, year_release, brand_id, mileage) values ('KNAAB12C5T0123456','1999','1','10000'), ('KNGGB12C5T0123456','2000','2','50000');
+insert into hours_work (hours_open, hours_close) values ('10:00:00','14:00:00'), ('13:00:00','16:00:00');
+insert into users (role_id, user_name, user_secondname, phone) values ('1','Фбриков','Бебероч','79111112341'), ('2','Напалмович','Вьетам','86661488671');
+insert into rental_point(city, adress, hours_work, capacity_park, manager_id) values ('Москва','Колотушкин','1','10','1'), ('Питер','Солевая','2','100','2');
+insert into contract_status(status_name) values ('Пипим'), ('Патасич');
+insert into contract(point_id, start_day, start_end, auto_id, status_id) values ('1','2025-06-23 15:30:00','2025-06-23 15:30:00','1','1'), ('2','2025-06-23 15:30:00','2025-06-23 15:30:00','2','2');
+insert into user_booking(client_id, contract_id) values ('1','1'), ('2','2');
